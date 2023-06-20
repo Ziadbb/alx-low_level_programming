@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: Prints all possible combinations of single-digit numbers,
+ *              separated by a comma followed by a space.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,7 +17,7 @@ int main(void)
 		putchar((num % 10) + '0');
 		if (num == 9)
 			continue;
-		
+
 		putchar(',');
 		putchar(' ');
 	}
